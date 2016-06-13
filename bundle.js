@@ -49,13 +49,15 @@
 	__webpack_require__(109);
 	__webpack_require__(120);
 	__webpack_require__(121);
-	__webpack_require__(123);
-	__webpack_require__(125);
-	__webpack_require__(127);
-	__webpack_require__(129);
-	__webpack_require__(131);
-	__webpack_require__(133);
-	__webpack_require__(135);
+	__webpack_require__(122);
+	__webpack_require__(124);
+	__webpack_require__(126);
+	__webpack_require__(128);
+	__webpack_require__(130);
+	__webpack_require__(132);
+	__webpack_require__(134);
+	__webpack_require__(136);
+	__webpack_require__(138);
 
 	$(document).ready(() => {
 	    $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
@@ -13160,6 +13162,7 @@
 	let sideBar = $(".side-bar");
 	let hideSideBarButton = $("#hide-side-bar");
 	let showSideBarButton = $("#show-side-bar ");
+	let foot = $(".foot-inner");
 
 	hideSideBarButton.on('click', () => {
 	    sideBar.addClass("hide-side-bar");
@@ -13170,6 +13173,8 @@
 	    mainBody.removeClass("col-md-9 col-md-offset-3");
 	    mainHeading.addClass("show-heading");
 	    mainHeading.removeClass("hide-heading");
+	    foot.addClass("col-md-12");
+	    foot.removeClass("col-md-9");
 	});
 
 	showSideBarButton.on('click', () => {
@@ -13181,6 +13186,8 @@
 	    mainBody.removeClass("col-md-12");
 	    mainHeading.addClass("hide-heading");
 	    mainHeading.removeClass("show-heading");
+	    foot.addClass("col-md-9");
+	    foot.removeClass("col-md-12");
 	});
 
 /***/ },
@@ -13266,14 +13273,13 @@
 	});
 
 /***/ },
-/* 122 */,
-/* 123 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(124);
+	var content = __webpack_require__(123);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13293,7 +13299,7 @@
 	}
 
 /***/ },
-/* 124 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13307,13 +13313,13 @@
 
 
 /***/ },
-/* 125 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(126);
+	var content = __webpack_require__(125);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13333,7 +13339,7 @@
 	}
 
 /***/ },
-/* 126 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13347,13 +13353,13 @@
 
 
 /***/ },
-/* 127 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(128);
+	var content = __webpack_require__(127);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13373,7 +13379,7 @@
 	}
 
 /***/ },
-/* 128 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13381,19 +13387,19 @@
 
 
 	// module
-	exports.push([module.id, "#main-body {\n  height: 100vh;\n  transition: all 0.3s;\n}\n#main-body #heading {\n  background: #fff;\n  color: #222;\n  transition: all .1s;\n  overflow: hidden;\n}\n#main-body .show-heading {\n  box-shadow: 0 0 15px 7.5px #000;\n  height: 50px;\n  position: relative;\n  z-index: 1;\n}\n#main-body .hide-heading {\n  height: 0;\n}\n.flex-container {\n  display: flex;\n}\n", ""]);
+	exports.push([module.id, "#main-body {\n  background: #999;\n  height: 100vh;\n  transition: all 0.3s;\n}\n#main-body #heading {\n  background: #fff;\n  color: #222;\n  transition: all .1s;\n  overflow: hidden;\n}\n#main-body .show-heading {\n  box-shadow: 0 0 15px 7.5px #000;\n  height: 50px;\n  position: relative;\n  z-index: 1;\n}\n#main-body .hide-heading {\n  height: 0;\n}\n.main-body-div {\n  background: #999;\n  padding: 0 0 50px;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 129 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(130);
+	var content = __webpack_require__(129);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13413,7 +13419,7 @@
 	}
 
 /***/ },
-/* 130 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13421,19 +13427,19 @@
 
 
 	// module
-	exports.push([module.id, ".side-bar {\n  background: #323232;\n  box-shadow: 0 0 10px 7.5px #000;\n  height: 100vh;\n  position: fixed;\n  text-align: center;\n  transition: all .3s;\n  z-index: 2;\n}\n.hide-side-bar {\n  margin-left: -25%;\n}\n.side-bar-button {\n  background: #323232;\n  border: none;\n  border-radius: 0 0 25px 0;\n  box-shadow: 7.5px 5px 10px #000;\n  font-size: 2em;\n  left: 100%;\n  padding: 5px 15px;\n  position: absolute;\n}\n.side-bar-button i {\n  color: #79CDCD;\n  transition: all .3s;\n}\n.side-bar-button i:hover {\n  color: #fff;\n  text-shadow: 0 0 5px #fff;\n}\n.side-bar .hide-side-bar-button {\n  display: none;\n}\n.side-bar hr {\n  border: 0;\n  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #79CDCD, rgba(255, 255, 255, 0));\n  height: 1px;\n  margin-bottom: 0;\n  width: 60%;\n}\n.side-bar i {\n  color: #fff;\n  display: inline-block;\n  font-size: 1.5em;\n}\n.side-bar .main-heading {\n  color: #79CDCD;\n  font-weight: 400;\n  margin: 0;\n  padding-top: 15px;\n}\n.side-bar .profile-picture {\n  background: #aaa;\n  border: .5px solid #000;\n  border-radius: 25%;\n  box-shadow: 5px 5px 10px #000;\n  margin: 20px 0 0 10px;\n  padding: 15px;\n  width: 85%;\n}\n.side-bar .sub-heading-container {\n  padding: 50px 0 0 10px;\n  text-align: left;\n}\n.side-bar .sub-heading {\n  color: #79CDCD;\n  font-weight: 400;\n}\n.side-bar .description-container {\n  color: #79CDCD;\n  font-weight: 400;\n  text-align: justify;\n}\n.side-bar .personal-interest-container {\n  color: #79CDCD;\n  padding: 20px 0 0 0;\n  text-align: center;\n}\n.side-bar .personal-interest-container .content {\n  text-align: left;\n}\n.side-bar .personal-interest-container ul {\n  list-style: none;\n}\n.side-bar .personal-interest-container i {\n  color: #fff;\n  font-size: 1.5em;\n  padding-right: 15px;\n}\n.side-bar .personalty-container {\n  color: #79CDCD;\n  font-weight: 400;\n  text-align: center;\n}\n.side-bar .personalty-container a {\n  color: #79CDCD;\n  text-decoration: none;\n  transition: all .3s;\n}\n.side-bar .personalty-container a:hover {\n  color: #fff;\n  text-decoration: none;\n  text-shadow: 0 0 5px #fff;\n}\n", ""]);
+	exports.push([module.id, ".side-bar {\n  background: #323232;\n  box-shadow: 0 0 10px 7.5px #000;\n  height: 100vh;\n  position: fixed;\n  text-align: center;\n  transition: all .3s;\n  z-index: 3;\n}\n.hide-side-bar {\n  margin-left: -25%;\n}\n.side-bar-button {\n  background: #323232;\n  border: none;\n  border-radius: 0 0 25px 0;\n  box-shadow: 7.5px 5px 10px #000;\n  font-size: 2em;\n  left: 100%;\n  padding: 5px 15px;\n  position: absolute;\n}\n.side-bar-button i {\n  color: #79CDCD;\n  transition: all .3s;\n}\n.side-bar-button i:hover {\n  color: #fff;\n  text-shadow: 0 0 5px #fff;\n}\n.side-bar .hide-side-bar-button {\n  display: none;\n}\n.side-bar hr {\n  border: 0;\n  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #79CDCD, rgba(255, 255, 255, 0));\n  height: 1px;\n  margin-bottom: 0;\n  width: 60%;\n}\n.side-bar i {\n  color: #fff;\n  display: inline-block;\n  font-size: 1.5em;\n}\n.side-bar .main-heading {\n  color: #79CDCD;\n  font-weight: 400;\n  margin: 0;\n  padding-top: 15px;\n}\n.side-bar .profile-picture {\n  background: #aaa;\n  border: .5px solid #000;\n  border-radius: 25%;\n  box-shadow: 5px 5px 10px #000;\n  margin: 20px 0 0 10px;\n  padding: 15px;\n  width: 85%;\n}\n.side-bar .sub-heading-container {\n  padding: 50px 0 0 10px;\n  text-align: left;\n}\n.side-bar .sub-heading {\n  color: #79CDCD;\n  font-weight: 400;\n}\n.side-bar .description-container {\n  color: #79CDCD;\n  font-weight: 400;\n  text-align: center;\n}\n.side-bar .personal-interest-container {\n  color: #79CDCD;\n  padding: 20px 0 0 0;\n  text-align: center;\n}\n.side-bar .personal-interest-container .content {\n  text-align: left;\n}\n.side-bar .personal-interest-container ul {\n  list-style: none;\n}\n.side-bar .personal-interest-container i {\n  color: #fff;\n  font-size: 1.5em;\n  padding-right: 15px;\n}\n.side-bar .personalty-container {\n  color: #79CDCD;\n  font-weight: 400;\n  text-align: center;\n}\n.side-bar .personalty-container a {\n  color: #79CDCD;\n  text-decoration: none;\n  transition: all .3s;\n}\n.side-bar .personalty-container a:hover {\n  color: #fff;\n  text-decoration: none;\n  text-shadow: 0 0 5px #fff;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 131 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(132);
+	var content = __webpack_require__(131);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13453,7 +13459,7 @@
 	}
 
 /***/ },
-/* 132 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13467,13 +13473,13 @@
 
 
 /***/ },
-/* 133 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(134);
+	var content = __webpack_require__(133);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13493,7 +13499,7 @@
 	}
 
 /***/ },
-/* 134 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13501,19 +13507,19 @@
 
 
 	// module
-	exports.push([module.id, ".skills-div {\n  background: #151515;\n  box-shadow: 5px -3px 15px 2px #000;\n  color: #fff;\n  padding: 10px 25px;\n  z-index: 1;\n}\n.skills-div h1 {\n  padding-bottom: 10px;\n}\n.skills-div .skill-list-div {\n  text-align: left;\n}\n.skills-div hr {\n  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));\n  border: 0;\n  height: 1px;\n  margin: 5px 12.5% 15px;\n  width: 75%;\n}\n.skills-div .skill-list-div i {\n  font-size: 2em;\n  padding: 5px;\n}\n.skills-div .show-icon {\n  color: #fff;\n  display: inline;\n  transition: all .2s;\n  text-decoration: none;\n}\n.skills-div .show-icon:hover,\n.skills-div .show-icon:focus,\n.skills-div .show-icon:active {\n  text-shadow: 0 0 5px #fff;\n}\n.skills-div .hide-icon {\n  display: none;\n}\n.skills-div .skill-list-div .skill-row {\n  overflow: hidden;\n  transition: all .2s;\n}\n.skills-div .skill-list-div .skill-row-show {\n  height: 40px;\n  padding: 4px 0;\n}\n.skills-div .skill-list-div .skill-row-hide {\n  height: 0;\n}\n.skills-div .skill-list-div .skill-row-hide hr {\n  height: 0;\n}\n.skills-div .first-icon {\n  margin-left: 20px;\n}\n.skills-div .active-icon {\n  color: #fff;\n  text-shadow: 0 0 5px #fff;\n}\n.skills-div .inactive-icon {\n  color: #333;\n  text-shadow: 0 0 5px #333;\n}\n.skills-div .skill-list-div .icon-size-1 {\n  font-size: 30px;\n  padding: 0 8px;\n}\n.skills-div .skill-list-div .icon-size-2 {\n  font-size: 30px;\n  padding: 0 5px;\n}\n.skills-div .skill-list-div .icon-size-3 {\n  font-size: 28px;\n  padding: 0 4px;\n}\n.skills-div .skill-list-div .icon-size-4 {\n  font-size: 30px;\n  padding: 0 7px;\n}\n.skills-div .skill-list-div .icon-size-5 {\n  font-size: 30px;\n  padding: 0 2.8px;\n}\n.skills-div .skill-list-div .icon-size-6 {\n  font-size: 30px;\n  padding: 0 5px;\n}\n.skills-div .skill-list-div .icon-size-7 {\n  font-size: 30px;\n  padding: 0 4px;\n}\n", ""]);
+	exports.push([module.id, ".skills-div {\n  background: #151515;\n  box-shadow: 5px -3px 15px 2px #000;\n  color: #fff;\n  padding: 10px 25px;\n  z-index: 1;\n}\n.skills-div h2 {\n  background: #151515;\n  padding-bottom: 10px;\n}\n.skills-div .skill-list-div {\n  text-align: left;\n}\n.skills-div hr {\n  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff, rgba(255, 255, 255, 0));\n  border: 0;\n  height: 1px;\n  margin: 5px 12.5% 15px;\n  width: 75%;\n}\n.skills-div .skill-list-div i {\n  font-size: 2em;\n  padding: 5px;\n}\n.skills-div .show-icon {\n  color: #fff;\n  display: inline;\n  transition: all .2s;\n  text-decoration: none;\n}\n.skills-div .show-icon:hover,\n.skills-div .show-icon:focus,\n.skills-div .show-icon:active {\n  text-shadow: 0 0 5px #fff;\n}\n.skills-div .hide-icon {\n  display: none;\n}\n.skills-div .skill-list-div .skill-row {\n  overflow: hidden;\n  transition: all .2s;\n}\n.skills-div .skill-list-div .skill-row-show {\n  height: 36px;\n  padding: 4px 0;\n}\n.skills-div .skill-list-div .skill-row-hide {\n  height: 0;\n}\n.skills-div .skill-list-div .skill-row-hide hr {\n  height: 0;\n}\n.skills-div .first-icon {\n  margin-left: 20px;\n}\n.skills-div .active-icon {\n  color: #fff;\n  text-shadow: 0 0 5px #fff;\n}\n.skills-div .inactive-icon {\n  color: #333;\n  text-shadow: 0 0 5px #333;\n}\n.skills-div .skill-list-div .icon-size-1 {\n  font-size: 30px;\n  padding: 0 8px;\n}\n.skills-div .skill-list-div .icon-size-2 {\n  font-size: 30px;\n  padding: 0 5px;\n}\n.skills-div .skill-list-div .icon-size-3 {\n  font-size: 28px;\n  padding: 0 4px;\n}\n.skills-div .skill-list-div .icon-size-4 {\n  font-size: 30px;\n  padding: 0 7px;\n}\n.skills-div .skill-list-div .icon-size-5 {\n  font-size: 30px;\n  padding: 0 2.8px;\n}\n.skills-div .skill-list-div .icon-size-6 {\n  font-size: 30px;\n  padding: 0 5px;\n}\n.skills-div .skill-list-div .icon-size-7 {\n  font-size: 30px;\n  padding: 0 4px;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 135 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(136);
+	var content = __webpack_require__(135);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(95)(content, {});
@@ -13533,7 +13539,7 @@
 	}
 
 /***/ },
-/* 136 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(89)();
@@ -13542,6 +13548,86 @@
 
 	// module
 	exports.push([module.id, ".qualify-div {\n  background: #ddd;\n  box-shadow: 3px -3px 15px 2px #000;\n  color: #222;\n  padding: 25px 0;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 136 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(137);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(95)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./experience.less", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./experience.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(89)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".exp-div {\n  background: #fff;\n  box-shadow: 2px -2px 10px #000;\n  color: #000;\n  margin-bottom: 5px;\n  padding: 20px 0;\n}\n.exp-div hr {\n  border-color: #666;\n  border-radius: 20px;\n  border-style: solid;\n  border-width: 1px 0 0 0;\n  height: 30px;\n  width: 50%;\n}\n.exp-div hr:before {\n  border-color: #666;\n  border-radius: 20px;\n  border-style: solid;\n  border-width: 0 0 1px 0;\n  content: \"\";\n  display: block;\n  height: 30px;\n  margin-top: -31px;\n}\n.exp-div .top-row {\n  border-bottom: .2px solid #666;\n}\n.exp-div .right-col {\n  border-left: .2px solid #666;\n}\n.exp-div h3 {\n  display: block;\n  padding-top: 10px;\n}\n.exp-div h4 {\n  display: block;\n}\n.exp-div ul {\n  text-align: left;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 138 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(139);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(95)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./footer.less", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./footer.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(89)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer {\n  bottom: 0;\n  box-shadow: 0 0 10px 5px #000;\n  height: 50px;\n  position: fixed;\n  width: 100%;\n  z-index: 2;\n}\n.foot-inner {\n  background: linear-gradient(to right, #fff, #555, #000, #000);\n  padding: 10px 0;\n}\n.footer .foot-inner .left-div {\n  color: #000;\n  padding: 0 0 0 20px;\n  text-align: left;\n}\n.footer .foot-inner .right-div {\n  color: #fff;\n  font-family: 'Courgette', cursive;\n  padding: 0 20px 0 0;\n  text-align: right;\n}\n.footer .foot-inner .left-div .fa-heart {\n  color: red;\n  font-size: 1.75em;\n  padding: 5px 0 0;\n  text-shadow: 0 0 5px darkred;\n}\n", ""]);
 
 	// exports
 
