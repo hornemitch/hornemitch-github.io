@@ -60,11 +60,8 @@
 	__webpack_require__(139);
 
 	$(document).ready(() => {
-	    $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
-	});
-
-	$(window).load(function() {
 	    $(".se-pre-con").fadeOut("slow");
+	    $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
 	});
 
 
