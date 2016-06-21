@@ -60,7 +60,7 @@
 	__webpack_require__(138);
 
 	$(document).ready(() => {
-	    $(".se-pre-con").fadeOut("slow");
+	    $(".se-pre-con").fadeOut(2000);
 	    $('[data-toggle="tooltip"]').tooltip({placement: "right", trigger: "hover"});
 	});
 
